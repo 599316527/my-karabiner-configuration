@@ -1,8 +1,10 @@
 My Karabiner Configuration
 ==========================
 
-1. *Redefine `CapsLock` to `F19` in »[Seil](https://github.com/tekezo/Seil)«*
-2. *Change `F19` to `Hyper` in »[Karabiner](https://github.com/tekezo/Karabiner)«*
+1. Redefine `CapsLock` to `F19` in »[Seil](https://github.com/tekezo/Seil)«
+2. Change `F19` to `Hyper` in »[Karabiner](https://github.com/tekezo/Karabiner)«
+3. Open »[private.xml](https://raw.githubusercontent.com/599316527/my-karabiner-configuration/master/private.xml)« in »Karabiner«
+4. Enable remapping items you like
 
 ## Global
 
