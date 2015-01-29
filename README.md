@@ -16,10 +16,10 @@ My Karabiner Configuration
 * `Hyper` + `K` = `↑`
 * `Hyper` + `L` = `→`
 
-* `Hyper` + `C` = Open GoogleChrome.app
-* `Hyper` + `E` = Open SublimeTextEditor.app
-* `Hyper` + `F` = Open Finder.app
-* `Hyper` + `T` = Open Terminal.app
+* `Hyper` + `C` = Open *GoogleChrome.app*
+* `Hyper` + `E` = Open *SublimeTextEditor.app*
+* `Hyper` + `F` = Open *Finder.app*
+* `Hyper` + `T` = Open *Terminal.app*
 
 ## Poker II
 
@@ -35,21 +35,21 @@ My Karabiner Configuration
 
 ### Hard Programing
 
-* `Pn` + `[` = `Command` + `Shift` + `[`	// Previous Tab
-* `Pn` + `]` = `Command` + `Shift` + `]`	// Next Tab
+* `Pn` + `[` = `Command` + `Shift` + `[` = Previous Tab
+* `Pn` + `]` = `Command` + `Shift` + `]` = Next Tab
 
-* `Pn` + `7` = `Hyper` + `Fn` + `7`			// Previous Song
-* `Pn` + `8` = `Hyper` + `Fn` + `8`			// Play/Pause
-* `Pn` + `9` = `Hyper` + `Fn` + `9`			// Next Song
+* `Pn` + `7` = `Hyper` + `Fn` + `7` = Previous Song
+* `Pn` + `8` = `Hyper` + `Fn` + `8`	= Play/Pause
+* `Pn` + `9` = `Hyper` + `Fn` + `9`	= Next Song
 
-* `Pn` + `0` = `Fn` + `,`					// Mutes
-* `Pn` + `-` = `Fn` + `N`					// Volume Down
-* `Pn` + `=` = `Fn` + `M`					// Volume Up
+* `Pn` + `0` = `Fn` + `,` = Mutes
+* `Pn` + `-` = `Fn` + `N` = Volume Down
+* `Pn` + `=` = `Fn` + `M` = Volume Up
 
-* `Pn` + `,` = `Ctrl` + `Hyper` + `H`		// Goto Left Desktop
-* `Pn` + `.` = `Ctrl` + `Hyper` + `L`		// Goto Right Desktop
+* `Pn` + `,` = `Ctrl` + `Hyper` + `H` = Goto Left Desktop
+* `Pn` + `.` = `Ctrl` + `Hyper` + `L` = Goto Right Desktop
 
-* `Pn` + `E` = tcook@apple.com				// DIY Input String *(Length Limit)*
+* `Pn` + `E` = tcook@apple.com = DIY Input String *(Length Limit)*
 
 
 
