@@ -1,9 +1,8 @@
 My Karabiner Configuration
 ==========================
 
-*Redefine `CapsLock` to `F19` in »[Seil](https://github.com/tekezo/Seil)«*
-
-*Change `F19` to `Hyper` in »[Karabiner](https://github.com/tekezo/Karabiner)«*
+1. *Redefine `CapsLock` to `F19` in »[Seil](https://github.com/tekezo/Seil)«*
+2. *Change `F19` to `Hyper` in »[Karabiner](https://github.com/tekezo/Karabiner)«*
 
 ## Global
 
@@ -27,7 +26,7 @@ My Karabiner Configuration
 * Left `Alt` = Left `Command`
 * Right `Alt` = Right `Command`
 * Right `Ctrl` = `→`
-* `ESC` = `~`
+* `ESC` = ``~`
 
 * `Hyper` + `F7` = Music Previous
 * `Hyper` + `F8` = Music Play/Pause
