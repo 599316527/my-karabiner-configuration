@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<root>
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_APP_Finder</name>
+        <url type="file">/System/Library/CoreServices/Finder.app</url>
+    </vkopenurldef>
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_APP_Terminal</name>
+        <url type="file">/Applications/Utilities/Terminal.app</url>
+    </vkopenurldef>
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_APP_Chrome</name>
+        <url type="file">/Applications/Google Chrome.app</url>
+    </vkopenurldef>
+    <vkopenurldef>
+        <name>KeyCode::VK_OPEN_URL_APP_Sublime</name>
+        <url type="file">/Applications/Sublime Text.app</url>
+    </vkopenurldef>
+    <modifierdef>HYPER</modifierdef>
+    <item>
+        <name>For All Keyboard</name>
+        <item>
+            <name>F19(Capslock) as HyperKey</name>
+            <appendix>This maps F19 to Hyper Modifier</appendix>
+            <appendix>(+ When you type Capslock only, send Escape)</appendix>
+            <identifier>private.HyperKey</identifier>
+            <autogen>__KeyOverlaidModifier__ KeyCode::F19, KeyCode::VK_MODIFIER_HYPER, KeyCode::ESCAPE</autogen>
+            <autogen>__KeyToKey__ KeyCode::F19, KeyCode::VK_MODIFIER_HYPER</autogen>
+        </item>
+        <item>
+            <name>App Launch shortcuts</name>
+            <item>
+                <name>Set F19 + F to launch finder</name>
+                <identifier>private.open_finder</identifier>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::F, ModifierFlag::HYPER,
+                    KeyCode::VK_OPEN_URL_APP_Finder
+                </autogen>
+            </item>
+            <item>
+                <name>Set F19 + T to launch terminal</name>
+                <identifier>private.open_terminal</identifier>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::T, ModifierFlag::HYPER,
+                    KeyCode::VK_OPEN_URL_APP_Terminal
+                </autogen>
+            </item>
+            <item>
+                <name>Set F19 + E to launch SublimeText Editor</name>
+                <identifier>private.open_sublime</identifier>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::E, ModifierFlag::HYPER,
+                    KeyCode::VK_OPEN_URL_APP_Sublime
+                </autogen>
+            </item>
+            <item>
+                <name>Set F19 + C to launch Google Chrome</name>
+                <identifier>private.open_chrome</identifier>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::C, ModifierFlag::HYPER,
+                    KeyCode::VK_OPEN_URL_APP_Chrome
+                </autogen>
+            </item>
+        </item>
+        <item>
+            <name>Hyper+H,J,K,L to LEFT,DOWN,UP,RIGHT</name>
+            <item>
+                <name>Hyper+J To Down</name>
+                <appendix>Hyper+J, send down</appendix>
+                <identifier>private.hyperj2down</identifier>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::J, ModifierFlag::HYPER,
+                    KeyCode::CURSOR_DOWN
+                </autogen>
+            </item>
+            <item>
+                <name>Hyper+K To Up</name>
+                <appendix>Hyper+k, send up</appendix>
+                <identifier>private.hyperk2up</identifier>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::K, ModifierFlag::HYPER,
+                    KeyCode::CURSOR_UP
+                </autogen>
+            </item>
+            <item>
+                <name>Hyper+H To Left</name>
+                <appendix>Hyper+h, send left</appendix>
+                <identifier>private.hyperh2left</identifier>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::H, ModifierFlag::HYPER,
+                    KeyCode::CURSOR_LEFT
+                </autogen>
+            </item>
+            <item>
+                <name>Hyper+L To Right</name>
+                <appendix>Hyper+l, send right</appendix>
+                <identifier>private.hyperl2right</identifier>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::L, ModifierFlag::HYPER,
+                    KeyCode::CURSOR_RIGHT
+                </autogen>
+            </item>
+        </item>
+        <item>
+            <name>Hyper+Delete To ForwardDelete</name>
+            <identifier>private.hyperDelete2ForwardDelete</identifier>
+            <autogen>
+                __KeyToKey__
+                KeyCode::DELETE, ModifierFlag::HYPER,
+                KeyCode::FORWARD_DELETE
+            </autogen>
+        </item>
+        <item>
+            <name>CapsLock Key</name>
+            <identifier>private.CapsLockTab</identifier>
+            <autogen>
+                __KeyToKey__
+                KeyCode::TAB, ModifierFlag::HYPER,
+                KeyCode::CAPSLOCK
+            </autogen>
+        </item>
+    </item>
+    <item>
+        <name>For POKER II</name>
+        <devicevendordef>​
+            <vendorname>POKER_CORP</vendorname>​
+            <vendorid>0x0f39</vendorid>​
+        </devicevendordef>​
+        <deviceproductdef>
+            <productname>POKER_II</productname>
+            <productid>0x0611</productid>
+        </deviceproductdef>
+        <item>
+            <name>swapLeftCommandAndleftAlt</name>
+            <identifier>private.pkSwapLeftCommandAndleftAlt</identifier>
+            <device_only>DeviceVendor::POKER_CORP, DeviceProduct::POKER_II</device_only>
+            <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::OPTION_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::OPTION_L, KeyCode::COMMAND_L</autogen>
+        </item>
+        <item>
+            <name>rightAltToRightCommand</name>
+            <identifier>private.pkRightAltToLeftCommand</identifier>
+            <device_only>DeviceVendor::POKER_CORP, DeviceProduct::POKER_II</device_only>
+            <autogen>__KeyToKey__ KeyCode::OPTION_R, KeyCode::COMMAND_R</autogen>
+        </item>
+        <item>
+            <name>rightCtrlToRightArrow</name>
+            <identifier>private.pkRightCtrlToRightArrow</identifier>
+            <device_only>DeviceVendor::POKER_CORP, DeviceProduct::POKER_II</device_only>
+            <autogen>__KeyToKey__ KeyCode::CONTROL_R, KeyCode::CURSOR_RIGHT</autogen>
+        </item>
+        <item>
+            <name>changeEscToTilde</name>
+            <identifier>private.pkChangeEscToTilde</identifier>
+            <device_only>DeviceVendor::POKER_CORP, DeviceProduct::POKER_II</device_only>
+            <autogen>__KeyToKey__ KeyCode::ESCAPE, KeyCode::BACKQUOTE</autogen>
+        </item>
+        <item>
+            <name>Media Keys</name>
+            <item>
+                <name>Hyper+F7 To MUSIC_PREV</name>
+                <identifier>private.hyperF72MusicPrev</identifier>
+                <device_only>DeviceVendor::POKER_CORP, DeviceProduct::POKER_II</device_only>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::F7, ModifierFlag::HYPER,
+                    KeyCode::VK_CONSUMERKEY_MUSIC_PREV
+                </autogen>
+            </item>
+            <item>
+                <name>Hyper+F8 To MUSIC_PLAY</name>
+                <identifier>private.hyperF82MusicPlay</identifier>
+                <device_only>DeviceVendor::POKER_CORP, DeviceProduct::POKER_II</device_only>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::F8, ModifierFlag::HYPER,
+                    KeyCode::VK_CONSUMERKEY_MUSIC_PLAY
+                </autogen>
+            </item>
+            <item>
+                <name>Hyper+F9 To MUSIC_NEXT</name>
+                <identifier>private.hyperF82MusicNext</identifier>
+                <device_only>DeviceVendor::POKER_CORP, DeviceProduct::POKER_II</device_only>
+                <autogen>
+                    __KeyToKey__
+                    KeyCode::F9, ModifierFlag::HYPER,
+                    KeyCode::VK_CONSUMERKEY_MUSIC_NEXT
+                </autogen>
+            </item>
+        </item>
+    </item>
+</root>
